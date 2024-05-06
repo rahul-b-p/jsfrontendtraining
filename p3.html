@@ -35,6 +35,10 @@
                 msg.innerHTML='not eligible to vote'
                 msg.style.color='red'
             }
+            else if(age.length==0){
+                msg.innerHTML='please enter a valid input'
+                msg.style.color='blue'
+            }
             else{
                 msg.innerHTML='please enter a valid input'
                 msg.style.color='blue'
