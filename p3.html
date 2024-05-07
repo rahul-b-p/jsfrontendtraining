@@ -27,20 +27,22 @@
 </body>
 <script>
         function check(){
-            if(age.value>=18){
-                msg.innerHTML='eligible to vote'
-                msg.style.color='green'
-            }
-            else if(age.value<18){
-                msg.innerHTML='not eligible to vote'
-                msg.style.color='red'
-            }
-            else if(age.length==0){
-                msg.innerHTML='please enter a valid input'
-                msg.style.color='blue'
+            if(age.value){
+                if(age.value>=18){
+                    msg.innerHTML='eligible to vote'
+                    msg.style.color='green'
+                }
+                else if(age.value<18){
+                    msg.innerHTML='not eligible to vote'
+                    msg.style.color='red'
+                }
+                else{
+                    msg.innerHTML='please enter a valid input'
+                    msg.style.color='orange'
+                }
             }
             else{
-                msg.innerHTML='please enter a valid input'
+                msg.innerHTML='please fill the form completely'
                 msg.style.color='blue'
             }
         }
